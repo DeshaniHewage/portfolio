@@ -803,10 +803,15 @@ h3.my-profession {
         max-width: 100%;
     }
     .home .home-img {
-        display: flex;
-        align-items: center;
+        top: 30px;
+        left: 75px;
     }
-
+    .home-img::after {
+        display: none;
+    }
+    .home-img::before {
+        display: none;
+    }
 }
 
 @media (max-width:767px) {
@@ -817,7 +822,8 @@ h3.my-profession {
     .about .about-content .experience,
     .about .about-content .education,
     .about .about-content .skills,
-    .about .about-content .personal-info {
+    .about .about-content .personal-info 
+    {
         flex: 0 0 100%;
         max-width: 100%;
     }
