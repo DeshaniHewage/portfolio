@@ -804,6 +804,7 @@ h3.my-profession {
     }
     .home .home-img {
         display: flex;
+        align-items: center;
     }
 
 }
