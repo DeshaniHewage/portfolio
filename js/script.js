@@ -100,7 +100,7 @@ const navTogglerBtn = document.querySelector(".nav-toggler"),
 
     /* Google Sheet */
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyqkYWrEqqq91r-tjsK2U5w-NJc5Xfv3J6mMBd8eKi8cigbbP0B4LMnyKHchdAOUUrb/exec'
-const form = document.forms['contact-form']
+const form = document.forms['contact-formm']
 
 form.addEventListener('submit', e => {
     e.preventDefault()
