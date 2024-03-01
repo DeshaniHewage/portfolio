@@ -97,3 +97,15 @@ const navTogglerBtn = document.querySelector(".nav-toggler"),
             allSection[i].classList.toggle("open");
         }
     }
+
+    /* Google Sheet */
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyqkYWrEqqq91r-tjsK2U5w-NJc5Xfv3J6mMBd8eKi8cigbbP0B4LMnyKHchdAOUUrb/exec'
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("Thank you! your form is submitted successfully."))
+    .then(() => {window.location.reload(); })
+    .catch(error => console.error('Error!', error.message))  
+})
