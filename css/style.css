@@ -762,6 +762,8 @@ h3.my-profession {
     padding: 0 50px;
 }
 
+/* Responsive */
+
 @media (max-width:1199px) {
     .section .container {
         padding-top: 70px;
@@ -827,4 +829,4 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
-}
+} 
